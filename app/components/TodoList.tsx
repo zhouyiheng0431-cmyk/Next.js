@@ -1,9 +1,10 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { deleteTodo, updateTodo } from '../lib/api'
 import type { Todo } from '../types'
-import Link from 'next/link'
+import { Button } from '../../components/ui/button'
 import TodoItem from './TodoItem'
 
 interface TodoListProps {
@@ -11,6 +12,7 @@ interface TodoListProps {
 }
 
 export default function TodoList({ initialTodos }: TodoListProps) {
+  const router = useRouter()
   const [todos, setTodos] = useState(initialTodos)
 
   async function handleToggle(todo: Todo) {
@@ -29,12 +31,12 @@ export default function TodoList({ initialTodos }: TodoListProps) {
 
   return (
     <>
-      <Link
+      <Button
         className="mb-6 rounded-lg bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700"
-        href="/add-task"
+        onClick={() => router.push('/add-task')}
       >
         Add Task
-      </Link>
+      </Button>
 
       <ul className="space-y-3">
         {todos.map((todo) => (
