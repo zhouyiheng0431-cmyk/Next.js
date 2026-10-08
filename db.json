@@ -12,8 +12,18 @@
     },
     {
       "title": "Refresh test",
-      "completed": false,
+      "completed": true,
       "id": "cf-ITpokrHI"
+    },
+    {
+      "title": "study",
+      "completed": false,
+      "id": "mCayygWoTZk"
+    },
+    {
+      "title": "eat",
+      "completed": false,
+      "id": "U_P-Rr9-cVU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

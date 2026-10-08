@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { createTodo } from '../lib/api'
+import { Input } from '../../components/ui/input'
 
 export default function AddTaskPage() {
   const router = useRouter()
@@ -33,7 +34,7 @@ export default function AddTaskPage() {
           <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="title">
             Task name
           </label>
-          <input
+          <Input
             className="mb-4 w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 outline-blue-600"
             id="title"
             value={title}
