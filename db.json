@@ -9,6 +9,11 @@
       "title": "study",
       "completed": true,
       "id": "85GMMd6XZ3s"
+    },
+    {
+      "title": "Refresh test",
+      "completed": false,
+      "id": "cf-ITpokrHI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
