@@ -1,0 +1,15 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Learn React components",
+      "completed": true
+    },
+    {
+      "title": "study",
+      "completed": true,
+      "id": "85GMMd6XZ3s"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
